@@ -1,6 +1,7 @@
-import React, {FC, forwardRef, Ref} from 'react';
-import {AspectRatio, Image} from '../';
-import {IAspectImageProps} from './AspectImage.types';
+import React, { FC, forwardRef, Ref } from "react";
+import AspectRatio from "../AspectRatio/AspectRatio.component";
+import Image from "../Image/Image.component";
+import { IAspectImageProps } from "./AspectImage.types";
 
 const AspectImage: FC<IAspectImageProps> = forwardRef(
   (
@@ -17,7 +18,7 @@ const AspectImage: FC<IAspectImageProps> = forwardRef(
       useMap,
       ...props
     },
-    ref: Ref<HTMLDivElement>,
+    ref: Ref<HTMLDivElement>
   ) => (
     <AspectRatio ratio={ratio} {...props}>
       <Image
@@ -32,13 +33,13 @@ const AspectImage: FC<IAspectImageProps> = forwardRef(
         useMap={useMap}
         ref={ref}
         sx={{
-          objectFit: 'cover',
-          width: '100%',
-          height: '100%',
+          objectFit: "cover",
+          width: "100%",
+          height: "100%",
         }}
       />
     </AspectRatio>
-  ),
+  )
 );
 
 export default AspectImage;

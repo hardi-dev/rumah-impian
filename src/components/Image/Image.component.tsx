@@ -1,11 +1,11 @@
-import React, {FC, forwardRef, Ref} from 'react';
-import {Fond} from '../';
-import {IImageProps} from './Image.types';
+import React, { FC, forwardRef, Ref } from "react";
+import Fond from "../Fond/Fond.component";
+import { IImageProps } from "./Image.types";
 
 export const Image: FC<IImageProps> = forwardRef(
   (
-    {sx, boxShadow, maxWidth = '100%', height = 'auto', ...props},
-    ref: Ref<HTMLImageElement>,
+    { sx, maxWidth = "100%", height = "auto", ...props },
+    ref: Ref<HTMLImageElement>
   ) => (
     <Fond
       ref={ref}
@@ -14,11 +14,10 @@ export const Image: FC<IImageProps> = forwardRef(
       height={height}
       {...props}
       sx={{
-        boxShadow,
         ...sx,
       }}
     />
-  ),
+  )
 );
 
 export default Image;

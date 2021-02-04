@@ -1,6 +1,6 @@
-import React, {FC, forwardRef, Ref} from 'react';
-import {IAspectRationProps} from './AspectRatio.types';
-import {Fond} from '../';
+import React, { FC, forwardRef, Ref } from "react";
+import { IAspectRationProps } from "./AspectRatio.types";
+import Fond from "../Fond/Fond.component";
 
 export const AspectRatio: FC<IAspectRationProps> = forwardRef(
   (
@@ -24,20 +24,21 @@ export const AspectRatio: FC<IAspectRationProps> = forwardRef(
       children,
       ...props
     },
-    ref: Ref<HTMLDivElement>,
+    ref: Ref<HTMLDivElement>
   ) => (
     <Fond
       ref={ref}
       {...props}
       sx={{
-        position: 'relative',
-        overflow: 'hidden',
-      }}>
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
       <Fond
         sx={{
-          width: '100%',
+          width: "100%",
           height: 0,
-          paddingBottom: 100 / ratio + '%',
+          paddingBottom: 100 / ratio + "%",
         }}
       />
       <Fond
@@ -57,16 +58,17 @@ export const AspectRatio: FC<IAspectRationProps> = forwardRef(
         alignItems={alignItems}
         order={order}
         sx={{
-          position: 'absolute',
-          top: '0px',
-          right: '0px',
-          bottom: '0px',
-          left: '0px',
-        }}>
+          position: "absolute",
+          top: "0px",
+          right: "0px",
+          bottom: "0px",
+          left: "0px",
+        }}
+      >
         {children}
       </Fond>
     </Fond>
-  ),
+  )
 );
 
 export default AspectRatio;

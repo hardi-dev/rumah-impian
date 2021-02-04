@@ -1,15 +1,14 @@
 import {CommonProps, TypographyProps, LayoutProps} from '../../styles/types';
 import {TextTransformProps} from 'styled-system';
 
+
+
 export type ITextType =
-  | 'caption'
-  | 'body2'
-  | 'body1'
-  | 'h4'
-  | 'h3'
-  | 'h2'
-  | 'h1'
-  | 'title';
+'title' |
+'subtitle' |
+'body' |
+'caption1' |
+'caption2' 
 
 export interface ITextProps
   extends CommonProps,

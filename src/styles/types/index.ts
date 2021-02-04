@@ -1,4 +1,4 @@
-import {spaces, colors, radius, icons, scrabbles} from '../tokens';
+import {spaces, colors, icons, scrabbles} from '../tokens';
 import theme from '../theme/customTheme';
 import {ElementType, ClassAttributes} from 'react';
 import {SystemStyleObject} from '@styled-system/css';
@@ -12,7 +12,6 @@ Tokens
 const tokens = {
   spaces,
   colors,
-  radius,
   icons,
   scrabbles,
 };
@@ -20,7 +19,6 @@ const tokens = {
 export type Tokens = typeof tokens;
 export type TSpaceToken = keyof Tokens['spaces'];
 export type TColorToken = keyof Tokens['colors'];
-export type TRadiusToken = keyof Tokens['radius'];
 export type TIconTokens = keyof Tokens['icons'];
 export type TScrabbleTokens = keyof Tokens['scrabbles'];
 export type TTheme = typeof theme;

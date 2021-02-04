@@ -1,1 +1,3 @@
-export default ['540px', '720px', '82%', '82%'];
+const container = ['540px', '720px', '90%', '90%']
+
+export default container;
