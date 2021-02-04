@@ -1,0 +1,87 @@
+$spaces: (
+  "l": 24px,
+  "m": 16px,
+  "s": 8px,
+  "xs": 4px,
+);
+
+@function space($key) {
+  @if map-has-key($spaces, $key) {
+    @return map-get($spaces, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $spaces.";
+  @return null;
+}
+
+@mixin generate-space($spacesMaps, $location, $direction: null) {
+  @each $name, $size in $spaces {
+    $val: $size;
+
+    @if $direction == x {
+      $val: 0 #{$size};
+    } @else if $direction == y {
+      $val: #{$size} 0;
+    }
+
+    &__#{$name} {
+      #{$location}: $val;
+    }
+  }
+}
+
+.m {
+  @include generate-space($spaces, "margin");
+}
+
+.ml {
+  @include generate-space($spaces, "margin-left");
+}
+
+.mt {
+  @include generate-space($spaces, "margin-top");
+}
+
+.mr {
+  @include generate-space($spaces, "margin-right");
+}
+
+.mb {
+  @include generate-space($spaces, "margin-bottom");
+}
+
+.mx {
+  @include generate-space($spaces, "margin", "x");
+}
+
+.my {
+  @include generate-space($spaces, "margin", "y");
+}
+
+.p {
+  @include generate-space($spaces, "padding");
+}
+
+.pl {
+  @include generate-space($spaces, "padding-left");
+}
+
+.pt {
+  @include generate-space($spaces, "padding-top");
+}
+
+.pr {
+  @include generate-space($spaces, "padding-right");
+}
+
+.pb {
+  @include generate-space($spaces, "padding-bottom");
+}
+
+.px {
+  @include generate-space($spaces, "padding", "x");
+}
+
+.py {
+  @include generate-space($spaces, "padding", "y");
+}

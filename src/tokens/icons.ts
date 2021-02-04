@@ -1,0 +1,9 @@
+export { ReactComponent as ArrowLeft } from "../assets/icons/ic-arrow-left.svg";
+export { ReactComponent as ArrowRight } from "../assets/icons/ic-arrow-right.svg";
+export { ReactComponent as Arrow } from "../assets/icons/ic-arrow.svg";
+export { ReactComponent as Bathroom } from "../assets/icons/ic-bathroom.svg";
+export { ReactComponent as Bedroom } from "../assets/icons/ic-bedroom.svg";
+export { ReactComponent as BuildingSize } from "../assets/icons/ic-building-size.svg";
+export { ReactComponent as LandSize } from "../assets/icons/ic-land-size.svg";
+export { ReactComponent as Love } from "../assets/icons/ic-love.svg";
+export { ReactComponent as Marker } from "../assets/icons/ic-marker.svg";

@@ -3,6 +3,7 @@ import "./HeroHome.scss";
 import { classname } from "../../utils/helper";
 import Container from "../Container/Container.component";
 import Text from "../Text/Text.component";
+import Icon from "../Icon/Icon.component";
 
 const HeroHome: FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className,
@@ -20,6 +21,9 @@ const HeroHome: FC<React.HTMLAttributes<HTMLDivElement>> = ({
         <Text variant="body">manntap jiwa</Text>
         <Text variant="caption1">manntap jiwa</Text>
         <Text variant="caption2">manntap jiwa</Text>
+
+        <Icon name="ArrowLeft" />
+        <Icon name="Bathroom" size="IconSize38" />
       </Container>
     </section>
   );
