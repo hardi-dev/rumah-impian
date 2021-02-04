@@ -1,0 +1,28 @@
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+@mixin small {
+  @media (max-width: #{$bp-sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$bg-large - 1px}) {
+    @content;
+  }
+}

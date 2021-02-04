@@ -1,0 +1,40 @@
+@import "../../assets/styles/text.scss";
+@import "../../assets/styles/colors.scss";
+
+$text-variants: (
+  "title": 4.5rem,
+  "subtitle": 1.5rem,
+  "body": 1rem,
+  "caption1": 0.875rem,
+  "caption2": 0.75rem,
+);
+
+$text-weights: (
+  "normal": $font-primary,
+  "demi": $font-primary-demi,
+  "bold": $font-primary-bold,
+);
+
+.text {
+  font-family: $font-primary;
+  font-size: 1rem;
+  line-height: 1.4;
+
+  @each $weight, $value in $text-weights {
+    &__#{$weight} {
+      font-family: $value;
+    }
+  }
+
+  @each $variant, $size in $text-variants {
+    &__#{$variant} {
+      font-size: $size;
+    }
+  }
+
+  @each $color, $value in $colors {
+    &__color-#{$color} {
+      color: $value;
+    }
+  }
+}

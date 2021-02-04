@@ -1,0 +1,5 @@
+$font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$font-primary-bold: "AvenirNextBold", #{$font-fallback};
+$font-primary-demi: "AvenirNextDemiBold", #{$font-fallback};
+$font-primary: "AvenirNextRegular", #{$font-fallback};

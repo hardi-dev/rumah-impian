@@ -1,0 +1,16 @@
+@import "./assets/styles/fonts";
+@import "./assets/styles/reset";
+
+body,
+html {
+  margin: 0;
+  font-family: "AvenirNextRegular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

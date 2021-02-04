@@ -1,0 +1,12 @@
+@import "../../assets/styles/colors.scss";
+
+.hero-home {
+  background-image: linear-gradient(
+    90deg,
+    color("secondary"),
+    color("secondary-dark")
+  );
+  background-color: color("secondary");
+  width: 100%;
+  min-height: 100vh;
+}

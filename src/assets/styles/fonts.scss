@@ -1,0 +1,23 @@
+$font-path: "./../fonts";
+$font-name: "AvenirNext";
+
+@font-face {
+  font-family: "AvenirNextBold";
+  src: url("#{$font-path}/#{$font-name}-Bold.woff2") format("woff2"),
+    url("#{$font-path}/#{$font-name}-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "AvenirNextDemiBold";
+  src: url("#{$font-path}/#{$font-name}-DemiBold.woff2") format("woff2"),
+    url("#{$font-path}/#{$font-name}-DemiBold.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AvenirNextRegular";
+  src: url("#{$font-path}/#{$font-name}-Regular.woff2") format("woff2"),
+    url("#{$font-path}/#{$font-name}-Regular.woff") format("woff");
+  font-weight: normal;
+}

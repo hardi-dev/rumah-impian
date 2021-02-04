@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="test-FE" transform="translate(-1336.000000, -470.000000)" fill="#000000">
+            <g id="Group-Copy" transform="translate(1347.000000, 481.000000) scale(-1, 1) translate(-1347.000000, -481.000000) translate(1323.000000, 457.000000)">
+                <g id="ic_arrow_back" transform="translate(8.000000, 8.000000)">
+                    <polygon id="Icon" points="26.6666667 14.6666667 10.44 14.6666667 17.8933333 7.21333333 16 5.33333333 5.33333333 16 16 26.6666667 17.88 24.7866667 10.44 17.3333333 26.6666667 17.3333333"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
