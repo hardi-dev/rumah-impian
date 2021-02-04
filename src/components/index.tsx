@@ -11,3 +11,4 @@ export { default as Navbar } from "./Navbar/Navbar.component";
 export { default as CardProduct } from "./CardProduct/CardProduct.component";
 export { default as Chips } from "./Chips/Chips.component";
 export { default as ProductFac } from "./ProductFac/ProductFac.component";
+export { default as ProductCarousel } from "./ProductCarousel/ProductCarousel.component";
