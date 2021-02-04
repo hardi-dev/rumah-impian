@@ -1,4 +1,4 @@
-import {spaces, colors, icons, scrabbles} from '../tokens';
+import {spaces, colors, icons} from '../tokens';
 import theme from '../theme/customTheme';
 import {ElementType, ClassAttributes} from 'react';
 import {SystemStyleObject} from '@styled-system/css';
@@ -13,14 +13,12 @@ const tokens = {
   spaces,
   colors,
   icons,
-  scrabbles,
 };
 
 export type Tokens = typeof tokens;
 export type TSpaceToken = keyof Tokens['spaces'];
 export type TColorToken = keyof Tokens['colors'];
 export type TIconTokens = keyof Tokens['icons'];
-export type TScrabbleTokens = keyof Tokens['scrabbles'];
 export type TTheme = typeof theme;
 
 export interface BaseProps extends ClassAttributes<any> {

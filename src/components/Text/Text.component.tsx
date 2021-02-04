@@ -9,32 +9,34 @@ const { fontSizes, lineHeight } = fonts;
 const title: TypographyProps = {
   fontSize: fontSizes[0],
   lineHeight: lineHeight[0],
+  fontFamily: "AvenirNextBold",
 };
 
 const subtitle: TypographyProps = {
-  fontSize: fontSizes[0],
+  fontSize: fontSizes[1],
   lineHeight: lineHeight[0],
+  fontFamily: "AvenirNextDemi",
 };
 
 const body: TypographyProps = {
-  fontSize: fontSizes[1],
-  lineHeight: lineHeight[1],
-};
-
-const caption1: TypographyProps = {
   fontSize: fontSizes[2],
   lineHeight: lineHeight[0],
 };
 
-const caption2: TypographyProps = {
+const caption1: TypographyProps = {
   fontSize: fontSizes[3],
-  lineHeight: lineHeight[2],
+  lineHeight: lineHeight[0],
+};
+
+const caption2: TypographyProps = {
+  fontSize: fontSizes[4],
+  lineHeight: lineHeight[0],
 };
 
 const Text: FC<ITextProps> = ({
   children,
-  variant = "body1",
-  color = "dark",
+  variant = "body",
+  color = "black",
   ...rest
 }) => {
   const config: { [key: string]: TypographyProps } = {

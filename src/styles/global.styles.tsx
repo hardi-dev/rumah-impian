@@ -1,30 +1,29 @@
-import {createGlobalStyle} from 'styled-components';
-import FSEmeric from '../assets/fonts/FSEmericWeb-Regular.woff';
-import FSEmericBold from '../assets/fonts/FSEmericWeb-Bold.woff';
-import FSEmericMedium from '../assets/fonts/FSEmericWeb-Medium.woff';
-import reset from 'styled-reset';
-import {colors} from '../styles/tokens';
+import { createGlobalStyle } from "styled-components";
+import AvenirNextBold from "../assets/fonts/AvenirNext-Bold.woff";
+import AvenirNextDemiBold from "../assets/fonts/AvenirNext-DemiBold.woff";
+import AvenirNext from "../assets/fonts/AvenirNext-Regular.woff";
+import reset from "styled-reset";
 
 export const GlobalStyles = createGlobalStyle`
   ${reset}
 
   @font-face {
-    font-family: 'FS Emeric';
+    font-family: 'AvenirNext';
     font-style: normal;
-    src: url(${FSEmeric});
+    src: url(${AvenirNext});
   }
 
   @font-face {
-    font-family: 'FS Emeric';
+    font-family: 'AvenirNextBold';
     font-style: normal;
     font-weight: bold;
-    src: url(${FSEmericBold});
+    src: url(${AvenirNextBold});
   }
 
   @font-face {
-    font-family: 'FS Emeric';
-    font-weight: 500;
-    src: url(${FSEmericMedium});
+    font-family: 'AvenirNextDemi';
+    font-weight: 400;
+    src: url(${AvenirNextDemiBold});
   }
 
   html {
@@ -35,38 +34,11 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: 'FS Emeric', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'AvenirNext', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: normal;
     overflow-x: hidden;
     min-height: 100vh;
-    font-size: 12px;
-    line-height: 1.66;
-
-    @media screen and (min-width: 576px) {
-      font-size: 14px;
-      line-height: 1.66;
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 1vw;
-      line-height: 1.66;
-    }
-  }
-
-  input {
-    font-size: 12px;
-    line-height: 1.66;
-    font-family: 'FS Emeric', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
-    @media screen and (min-width: 576px) {
-      font-size: 14px;
-      line-height: 1.66;
-    }
-
-    @media screen and (min-width: 768px) {
-      font-size: 1vw;
-      line-height: 1.66;
-    }
+    font-size: 16px;
   }
 
   a {
@@ -76,37 +48,5 @@ export const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-  }
-
-  .lime {
-    color: ${colors.secondary25}
-  }
-
-  .royal-blue {
-    color: ${colors.primary50}
-  }
-  
-  .blue {
-    color: ${colors.primary25}
-  }
-
-  .orange {
-    color: ${colors.secondary100}
-  }
-
-  .navy {
-    color: ${colors.primary100}
-  }
-
-  .navy-50 {
-    color: "#95A4C4"
-  }
-
-  .dark {
-    color: ${colors.dark}
-  }
-
-  .medium {
-    color: ${colors.medium}
   }
 `;

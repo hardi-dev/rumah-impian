@@ -1,8 +1,6 @@
 import {CommonProps, TypographyProps, LayoutProps} from '../../styles/types';
 import {TextTransformProps} from 'styled-system';
 
-
-
 export type ITextType =
 'title' |
 'subtitle' |
