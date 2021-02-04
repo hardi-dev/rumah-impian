@@ -6,7 +6,7 @@ import Fond from "../Fond/Fond.component";
 
 const Icon: FC<IIconProps> = ({
   name = "ArrowLeft",
-  color = "white",
+  color = "black",
   width = "24px",
   height = "auto",
   ...rest
@@ -15,7 +15,8 @@ const Icon: FC<IIconProps> = ({
 
   return (
     <Fond
-      as="div"
+      as="span"
+      display="block"
       sx={{ lineHeight: 0 }}
       width={width}
       height={height}

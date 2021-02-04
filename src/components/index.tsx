@@ -8,3 +8,6 @@ export { default as AspectImage } from "./AspectImage/AspectImage.component";
 export { default as Button } from "./Button/Button.component";
 export { default as Icon } from "./Icon/Icon.component";
 export { default as Navbar } from "./Navbar/Navbar.component";
+export { default as CardProduct } from "./CardProduct/CardProduct.component";
+export { default as Chips } from "./Chips/Chips.component";
+export { default as ProductFac } from "./ProductFac/ProductFac.component";

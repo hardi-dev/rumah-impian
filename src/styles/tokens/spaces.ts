@@ -1,11 +1,11 @@
 const spaces: any = [
   'auto',
   0,
-  '4px', 
-  '8px', 
-  '16px',
-  '24px',
-  '48px'
+  '4px', // xs
+  '8px', // s
+  '16px', // m
+  '24px', // l
+  '48px' // xl
 ];
 
 spaces.auto = spaces[0];

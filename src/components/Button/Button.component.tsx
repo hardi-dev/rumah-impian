@@ -1,29 +1,27 @@
 import React, { FC, forwardRef, Ref } from "react";
 import { IButtonProps } from "./Button.types";
-import Fond from "../Fond/Fond.component";
+import { StyledFond } from "./Button.styles";
 
 export const Button: FC<IButtonProps> = forwardRef(
   (
-    {
-      bg = "primary50",
-      size = "small",
-      color,
-      outlined,
-      as = "button",
-      ...props
-    },
+    { bg = "primary", color, as = "button", full = true, ...props },
     ref: Ref<HTMLButtonElement>
   ) => (
-    <Fond
+    <StyledFond
       as={as}
-      px={{ _: "m", md: "s" }}
-      py={{ _: "s", md: "xs" }}
-      bg={outlined ? "white" : bg}
+      px="l"
+      py="m"
+      borderRadius="4px"
+      bg={bg}
       color="white"
       ref={ref}
       fontSize="body"
+      fontFamily="AvenirNext"
       textAlign="center"
       display="inline-block"
+      width={full ? "100%" : "auto"}
+      border="none"
+      cursor="pointer"
       {...props}
     />
   )

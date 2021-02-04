@@ -13,10 +13,15 @@ const transform = system({
   transform: true,
 });
 
+const cursor = system({
+  cursor: true,
+});
+
 const Fond = styled("div").withConfig({ shouldForwardProp })<BoxProps>`
   ${BOX}
   ${TYPOGRAPHY}
   ${transform}
+  ${cursor}
   ${sx}
 `;
 

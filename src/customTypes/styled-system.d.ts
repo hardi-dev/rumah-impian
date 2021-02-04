@@ -9,4 +9,7 @@ declare module 'styled-system' {
   export interface TextTransformProps<ThemeType extends Theme = RequiredTheme> {
     textTransform?: ResponsiveValue<CSS.Property.TextTransform, ThemeType>;
   }
+  export interface CursorProps<ThemeType extends Theme = RequiredTheme> {
+    cursor?: ResponsiveValue<CSS.Property.Cursor, ThemeType>;
+  }
 }

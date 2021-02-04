@@ -55,6 +55,7 @@ export interface BoxProps
     PositionProps,
     TypographyProps,
     SS.TransformProps,
+    SS.CursorProps,
     Omit<React.HTMLAttributes<HTMLDivElement>, 'color'> {}
 
 export interface FlexProps extends BoxProps {}
