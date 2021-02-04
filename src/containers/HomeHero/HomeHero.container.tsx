@@ -29,7 +29,7 @@ const HomeHero: FC = () => {
           </Fond>
 
           <Flex width={{ _: 1, lg: 5 / 12 }} justifyContent="center">
-            <ProductCarousel productData={[1, 2, 3, 4, 5]} />
+            <ProductCarousel productData={[1, 2, 3, 4, 5]} ml="l" />
           </Flex>
         </Flex>
       </Container>

@@ -1,6 +1,6 @@
-import {CommonProps} from '../../styles/types';
+import {CommonProps, LayoutProps} from '../../styles/types';
 
-export interface ICardProductProps extends CommonProps {
+export interface ICardProductProps extends CommonProps, LayoutProps {
   productId: number;
   name: string;
   thumb: string;

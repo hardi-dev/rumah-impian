@@ -24,10 +24,11 @@ const CardProduct: FC<ICardProductProps> = ({
   liked,
   onClickButton,
   onClickLike,
+  width = "100%",
   ...restProps
 }) => {
   return (
-    <Fond width="100%" borderRadius={10} bg="white" p="s" overflow="hidden">
+    <Fond width={width} borderRadius={10} bg="white" p="s" overflow="hidden">
       <Fond borderRadius={6} overflow="hidden">
         <AspectImage src={thumb} alt={name} ratio={370 / 260} />
       </Fond>
