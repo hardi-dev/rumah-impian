@@ -9,6 +9,8 @@ import {
   ProductCarousel,
   Modal,
 } from "../../components";
+import bg from "../../assets/images/bg.png";
+import { secondary, secondaryDark } from "../../styles/tokens/colors";
 
 import ProductDetail from "../ProductDetail/ProductDetail.container";
 
@@ -17,7 +19,7 @@ const HomeHero: FC = () => {
 
   const handleOnClickDetail = (productId) => {
     setShowModal(true);
-    console.log("cli");
+    console.log("productid", productId);
   };
 
   const handleOnCloseModal = () => {
@@ -25,15 +27,36 @@ const HomeHero: FC = () => {
   };
 
   return (
-    <StyledFond>
+    <Fond
+      background={`
+        url(${bg}) left bottom no-repeat,
+        linear-gradient(90deg, ${secondary}, ${secondaryDark});
+      `}
+      backgroundSize="100%"
+      minHeight={{ _: "100vh", xl: "71vw" }}
+    >
       <Navbar />
       <Container>
-        <Flex mt="10%">
-          <Fond width={{ _: 1, lg: 7 / 12 }} pl={{ _: 0, md: "xl" }} pt={"5%"}>
-            <Text variant="title" color="white" mb="m">
+        <Flex
+          mt="10%"
+          flexDirection={{ _: "column", lg: "row" }}
+          alignItems={{ _: "center", lg: "flex-start" }}
+        >
+          <Fond
+            width={{ _: 1, lg: 6 / 12, xl: 7 / 12 }}
+            pl={{ _: "none", xl: "xl" }}
+            pt={"5%"}
+            mb={{ _: "l", lg: "none" }}
+          >
+            <Text
+              variant="title"
+              color="white"
+              mb={{ _: "s", lg: "m" }}
+              textAlign={{ _: "center", lg: "left" }}
+            >
               Start Your Journey
             </Text>
-            <Text color="white">
+            <Text color="white" textAlign={{ _: "center", lg: "left" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur magnam ad veniam fugit officia, quo, laudantium
               velit, officiis ipsum eius eligendi? Rerum iste odit cumque
@@ -41,10 +64,14 @@ const HomeHero: FC = () => {
             </Text>
           </Fond>
 
-          <Flex width={{ _: 1, lg: 5 / 12 }} justifyContent="center">
+          <Flex
+            width={{ _: 1, lg: 6 / 12, xl: 5 / 12 }}
+            justifyContent="center"
+            pb={{ _: "xl", lg: "none" }}
+          >
             <ProductCarousel
               productData={[1, 2, 3, 4, 5]}
-              ml="l"
+              ml={{ _: "none", lg: "l" }}
               onClickButton={handleOnClickDetail}
             />
           </Flex>
@@ -55,7 +82,7 @@ const HomeHero: FC = () => {
       <Modal isOpen={showModal} onCloseHandler={handleOnCloseModal}>
         <ProductDetail />
       </Modal>
-    </StyledFond>
+    </Fond>
   );
 };
 

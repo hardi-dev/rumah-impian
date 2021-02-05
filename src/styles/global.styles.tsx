@@ -39,6 +39,16 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     min-height: 100vh;
     font-size: 16px;
+
+    /* ['576px', '768px', '992px', '1200px']; */
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+
+    @media (min-width: 577px) and  (max-width: 992px){
+      font-size: 14px;
+    }
   }
 
   a {

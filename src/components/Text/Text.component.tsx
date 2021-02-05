@@ -8,7 +8,7 @@ const { fontSizes, lineHeight } = fonts;
 
 const title: TypographyProps = {
   fontSize: fontSizes[0],
-  lineHeight: lineHeight[0],
+  lineHeight: 1,
   fontFamily: "AvenirNextBold",
 };
 

@@ -38,11 +38,11 @@ const ProductCarousel: FC<IProductCarouselProps> = ({
         bg="white"
         borderRadius={100}
         overflow="hidden"
-        p="12px"
-        size="48px"
-        mr="l"
+        p={{ _: "4px", lg: "12px" }}
+        size={{ _: "24px", lg: "48px" }}
+        mr={{ _: "xs", lg: "l" }}
         cursor="pointer"
-        minWidth="48px"
+        minWidth={{ _: "24px", lg: "48px" }}
       />
       <Flex
         justifyContent="center"
@@ -87,11 +87,11 @@ const ProductCarousel: FC<IProductCarouselProps> = ({
         bg="white"
         borderRadius={100}
         overflow="hidden"
-        p="12px"
-        size="48px"
-        ml="l"
+        p={{ _: "4px", lg: "12px" }}
+        size={{ _: "24px", lg: "48px" }}
+        ml={{ _: "xs", lg: "l" }}
         cursor="pointer"
-        minWidth="48px"
+        minWidth={{ _: "24px", lg: "48px" }}
       />
     </Flex>
   );
