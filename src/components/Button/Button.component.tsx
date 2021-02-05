@@ -10,13 +10,13 @@ export const Button: FC<IButtonProps> = forwardRef(
     <StyledFond
       as={as}
       px="l"
-      py="m"
-      borderRadius="4px"
+      py="12px"
+      borderRadius="2px"
       bg={bg}
       color="white"
       ref={ref}
       fontSize="body"
-      fontFamily="AvenirNext"
+      fontFamily="AvenirNextDemi"
       textAlign="center"
       display="inline-block"
       width={full ? "100%" : "auto"}

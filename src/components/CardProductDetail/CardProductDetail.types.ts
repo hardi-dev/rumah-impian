@@ -1,6 +1,11 @@
 import {CommonProps, LayoutProps} from '../../styles/types';
 
-export interface ICardProductProps extends CommonProps, LayoutProps {
+export type IMarkerPosition = {
+  x: string;
+  y: string;
+}
+
+export interface ICardProductDetailProps extends CommonProps, LayoutProps {
   productId: number;
   name: string;
   thumb: string;
@@ -14,6 +19,10 @@ export interface ICardProductProps extends CommonProps, LayoutProps {
   landSize: string;
   liked: boolean;
   buttonLabel?: string;
+  address: string;
+  description: string;
+  map: string;
+  markerPos: IMarkerPosition;
   onClickButton: (productId: number) => void;
   onClickLike: (productId: number) => void;
 }

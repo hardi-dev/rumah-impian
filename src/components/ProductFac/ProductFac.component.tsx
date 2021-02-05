@@ -4,11 +4,17 @@ import Text from "../Text/Text.component";
 import Flex from "../Flex/Flex.component";
 import Icon from "../Icon/Icon.component";
 
-const ProductFact: FC<IProductFacProps> = ({ icon, label, ...restProps }) => {
+const ProductFact: FC<IProductFacProps> = ({
+  icon,
+  size = "16px",
+  textVariant = "caption1",
+  label,
+  ...restProps
+}) => {
   return (
     <Flex alignItems="center" {...restProps}>
-      <Icon name={icon} size="16px" />
-      <Text ml="xs" variant="caption1" fontFamily="AvenirNextDemi">
+      <Icon name={icon} size={size} />
+      <Text ml="xs" variant={textVariant} fontFamily="AvenirNextDemi">
         {label}
       </Text>
     </Flex>

@@ -25,11 +25,12 @@ const CardProduct: FC<ICardProductProps> = ({
   onClickButton,
   onClickLike,
   width = "100%",
+  buttonLabel = "Lihat Detail",
   ...restProps
 }) => {
   return (
-    <Fond width={width} borderRadius={10} bg="white" p="s" overflow="hidden">
-      <Fond borderRadius={6} overflow="hidden">
+    <Fond borderRadius={10} bg="white" p="s" overflow="hidden">
+      <Fond borderTopLeftRadius={6} borderTopRightRadius={6} overflow="hidden">
         <AspectImage src={thumb} alt={name} ratio={370 / 260} />
       </Fond>
       <Fond px="s" py="m">
@@ -67,7 +68,9 @@ const CardProduct: FC<ICardProductProps> = ({
         </Flex>
 
         {/* Button */}
-        <Button mt="l">Lihat Detail</Button>
+        <Button mt="l" onClick={() => onClickButton(productId)}>
+          {buttonLabel}
+        </Button>
       </Fond>
     </Fond>
   );

@@ -17,11 +17,16 @@ const cursor = system({
   cursor: true,
 });
 
+const transition = system({
+  transition: true,
+});
+
 const Fond = styled("div").withConfig({ shouldForwardProp })<BoxProps>`
   ${BOX}
   ${TYPOGRAPHY}
   ${transform}
   ${cursor}
+  ${transition}
   ${sx}
 `;
 
